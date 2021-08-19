@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>momentum</title>
+  </head>
+  <body>
+    <main class="momentum-main">
+      <section class="weather">
+        <div class="city" contenteditable="true"></div>
+        <button class="refresh-button" title="Refresh weather">
+          <img
+            src="assets/icons/refresh.png"
+            alt="Refresh weather"
+            class="refresh-img"
+          />
+        </button>
+        <div class="error-message"></div>
+        <div class="temp-indication">
+          <img src=" " alt="Weather icon" class="weather-icon hide" />
+          <div class="temp"></div>
+        </div>
+        <div class="humidity"></div>
+        <div class="wind"></div>
+      </section>
+      <button class="refresh-background" title="Refresh background">
+        <img
+          src="assets/icons/refresh-bg.png"
+          alt="Refresh background"
+          class="refresh-background-img"
+        />
+      </button>
+      <section class="date-time">
+        <time class="time"></time>
+        <time class="date"></time>
+      </section>
+      <section class="greetings">
+        <span class="greeting"></span>
+        <span class="name" contenteditable="true"></span>
+      </section>
+      <section class="today-focus">
+        <div>What Is Your Focus For Today?</div>
+        <div class="focus" contenteditable="true"></div>
+      </section>
+      <section class="quote">
+        <div class="quote-of-day"></div>
+        <div class="quote-author"></div>
+        <button class="quote-refresh" title="Refresh quote">
+          <img
+            src="assets/icons/refresh.png"
+            alt="Refresh weather"
+            class="refresh-img"
+          />
+        </button>
+      </section>
+    </main>
+    <script src="momentum.js"></script>
+  </body>
+</html>
